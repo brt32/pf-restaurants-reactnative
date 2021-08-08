@@ -15,9 +15,8 @@ export const RestaurantDetailScreen = ({ route }) => {
   const { restaurant } = route.params;
   return (
     <SafeArea>
+      <RestaurantInfoCard restaurant={restaurant} />
       <ScrollView>
-        <RestaurantInfoCard restaurant={restaurant} />
-
         <List.Accordion
           title="Breakfast"
           left={(props) => <List.Icon {...props} icon="bread-slice" />}
