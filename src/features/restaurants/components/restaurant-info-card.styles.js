@@ -4,6 +4,7 @@ import { Card } from "react-native-paper";
 export const Icon = styled.Image`
   width: 15px;
   height: 15px;
+  margin-left: 6px;
 `;
 
 export const RestaurantCard = styled(Card)`
@@ -12,7 +13,7 @@ export const RestaurantCard = styled(Card)`
 `;
 
 export const RestaurantCardCover = styled(Card.Cover)`
-  padding: ${(props) => props.theme.space[3]};
+  padding: ${(props) => props.theme.space[2]};
   background-color: ${(props) => props.theme.colors.bg.primary};
   height: 110px;
 `;

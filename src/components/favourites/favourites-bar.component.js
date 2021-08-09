@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, TouchableOpacity, View, Image } from "react-native";
+import { ScrollView, TouchableOpacity, View } from "react-native";
 import styled from "styled-components/native";
 import { CompactRestaurantInfo } from "../restaurant/compact-restaurant-info.component";
 import { Text } from "../typography/text.component";
@@ -7,6 +7,7 @@ import { Text } from "../typography/text.component";
 const FavouritesWrapper = styled.View`
   padding: 10px;
 `;
+
 export const FavouritesBar = ({ favourites, onNavigate }) => {
   if (!favourites.length) {
     return null;

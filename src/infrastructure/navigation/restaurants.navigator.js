@@ -1,29 +1,31 @@
 import React from "react";
-import { RestaurantsScreen } from "../../features/restaurants/screens/restaurants.screen";
-import { RestaurantDetailScreen } from "../../features/restaurants/screens/restaurant-detail.screen";
+
 import {
   createStackNavigator,
   TransitionPresets,
 } from "@react-navigation/stack";
 
-const RestaurantsStack = createStackNavigator();
+import { RestaurantsScreen } from "../../features/restaurants/screens/restaurants.screen";
+import { RestaurantDetailScreen } from "../../features/restaurants/screens/restaurant-detail.screen";
+
+const RestaurantStack = createStackNavigator();
 
 export const RestaurantsNavigator = () => {
   return (
-    <RestaurantsStack.Navigator
+    <RestaurantStack.Navigator
       screenOptions={{
         ...TransitionPresets.ModalPresentationIOS,
         headerShown: false,
       }}
     >
-      <RestaurantsStack.Screen
-        name="restaurants"
+      <RestaurantStack.Screen
+        name="Restaurants"
         component={RestaurantsScreen}
       />
-      <RestaurantsStack.Screen
+      <RestaurantStack.Screen
         name="RestaurantDetail"
         component={RestaurantDetailScreen}
       />
-    </RestaurantsStack.Navigator>
+    </RestaurantStack.Navigator>
   );
 };

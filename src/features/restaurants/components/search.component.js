@@ -5,7 +5,7 @@ import styled from "styled-components/native";
 import { LocationContext } from "../../../services/location/location.context";
 
 const SearchContainer = styled.View`
-  padding: ${(props) => props.theme.space[1]};
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 export const Search = ({ isFavouritesToggled, onFavouritesToggle }) => {
